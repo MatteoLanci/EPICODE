@@ -1,0 +1,32 @@
+/* Flex container: */
+.container {
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-evenly; */
+    /* align-items: stretch; */
+    /* justify-content: flex-start;
+    align-content: flex-end; */
+    flex-wrap: wrap;
+    height: 500px;
+    border: solid 1px green;
+}
+
+/* Flex items: */
+.flex-item {
+    border: solid 1px blue;
+    height: 100px;
+}
+
+/* Flex self: */
+/* .flex-self {
+    align-self: center;
+} */
+
+/* Order: */
+.flex-order-5 {
+    order: 99;
+}
+
+.flex-order-6 {
+    order: -1;
+}

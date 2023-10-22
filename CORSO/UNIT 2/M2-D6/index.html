@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <!--todo COLLEGATO LINK AD ICONE BOXICONS SOLO PER VISUALIZZARE ICONA AL POSTO DEL LINK DI REINDIRIZZAMENTO -->
+    <link rel="stylesheet" href="style.css" />
+    <!--todo È STATO COLLEGATO IL FOGLIO DI STILE PER VEDERE A VIDEO LA FUNZIONALITÀ DEL CODICE JS -->
+    <title>BuyView eCommerce | Matteo Lanci</title>
+  </head>
+  <body>
+    <!--!------------------------------------------ NOME DEL NEGOZIO -->
+    <h1>Nome del negozio</h1>
+    <!--!------------------------------------------ INIZIO TABELLA PRODOTTI -->
+    <table border="1">
+      <thead align="center">
+        <tr>
+          <th colspan="5" class="tableHeader">I NOSTRI TOP 5</th>
+        </tr>
+      </thead>
+      <!--!------------------------------------------ INIZIO CORPO TAB. PRODOTTI -->
+      <tbody align="center">
+        <!--?-------------------------- PRODOTTO #1 -->
+        <tr>
+          <td class="img-container" rowspan="3">
+            <img src="./assets/150.png" alt="product image" />
+          </td>
+          <td colspan="4">iPhone 14Pro</td>
+        </tr>
+        <tr>
+          <td colspan="4">Un semplicissimo iPhone</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="price">1.179,99€</td>
+          <td colspan="2">
+            <a href="https://amzn.eu/d/9ZNFvG8" target="_blank"
+              ><i class="bx bxl-amazon"></i
+            ></a>
+          </td>
+        </tr>
+        <!--?-------------------------- PRODOTTO #2 -->
+        <tr>
+          <td class="img-container" rowspan="3">
+            <img src="./assets/150.png" alt="product image" />
+          </td>
+          <td colspan="4">OnePlus 11Pro 5G</td>
+        </tr>
+        <tr>
+          <td colspan="4">un semplicissimo OnePlus</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="price">940,00€</td>
+          <td colspan="2">
+            <a href="https://amzn.eu/d/0eTh73j" target="_blank"
+              ><i class="bx bxl-amazon"></i
+            ></a>
+          </td>
+        </tr>
+        <!--?-------------------------- PRODOTTO #3 -->
+        <tr>
+          <td class="img-container" rowspan="3">
+            <img src="./assets/150.png" alt="product image" />
+          </td>
+          <td colspan="4">Xiaomi Redmi Note 11 Pro 5G</td>
+        </tr>
+        <tr>
+          <td colspan="4">Un semplicissimo Redmi</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="price">279,90€</td>
+          <td colspan="2">
+            <a href="https://amzn.eu/d/3TqNxRv" target="_blank"
+              ><i class="bx bxl-amazon"></i
+            ></a>
+          </td>
+        </tr>
+        <!--?-------------------------- PRODOTTO #4 -->
+        <tr>
+          <td class="img-container" rowspan="3">
+            <img src="./assets/150.png" alt="product image" />
+          </td>
+          <td colspan="4">Samsung Galaxy S23+</td>
+        </tr>
+        <tr>
+          <td colspan="4">Un semplicissimo Samsung</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="price">1.099,00€</td>
+          <td colspan="2">
+            <a href="https://amzn.eu/d/1wGc2q4" target="_blank"
+              ><i class="bx bxl-amazon"></i
+            ></a>
+          </td>
+        </tr>
+        <!--?-------------------------- PRODOTTO #5 -->
+        <tr>
+          <td class="img-container" rowspan="3">
+            <img src="./assets/150.png" alt="product image" />
+          </td>
+          <td colspan="4">Google Pixel 7 Pro</td>
+        </tr>
+        <tr>
+          <td colspan="4">Un semplicissimo Pixel</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="price">797,79€</td>
+          <td colspan="2">
+            <a href="https://amzn.eu/d/6WN3ynp" target="_blank"
+              ><i class="bx bxl-amazon"></i
+            ></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--!------------------------------------------ FINE TABELLA PRODOTTI -->
+    <!--*------------------------------------------ INIZIO USER TEXTAREA -->
+    <div class="textarea">
+      <textarea
+        name="textArea"
+        id="textArea"
+        cols="43"
+        rows="5"
+        placeholder="Lascia una recensione qui"></textarea>
+    </div>
+    <!--*------------------------------------------ FINE USER TEXTAREA -->
+    <!--?------------------------------------------ INIZIO FOOTER -->
+    <div class="footer">
+      <h2>Nome del negozio</h2>
+      <p id="address">indirizzo del negozio</p>
+    </div>
+    <!--?------------------------------------------ FINE FOOTER -->
+    <script src="script.js"></script>
+  </body>
+</html>

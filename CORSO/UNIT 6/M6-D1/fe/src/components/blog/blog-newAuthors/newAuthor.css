@@ -1,0 +1,30 @@
+.authorCard {
+  width: "18rem";
+  height: "25rem";
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px #00000070;
+  transition: all 0.4s;
+}
+.authorCard:hover {
+  transform: scale(1.05);
+}
+
+.authorDeleteIcon {
+  font-size: 1.2rem;
+  color: #000000;
+  transition: 0.3s;
+}
+.authorDeleteIcon:hover {
+  color: #d40e0e;
+}
+
+.authorPatchIcon {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-inline-start: 2rem;
+  transition: 0.3s;
+}
+.authorPatchIcon:hover {
+  color: #f1b430;
+}

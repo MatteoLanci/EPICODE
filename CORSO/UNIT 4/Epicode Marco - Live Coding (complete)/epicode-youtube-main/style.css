@@ -1,0 +1,87 @@
+/* Istruzioni globali: */
+body {
+    font-family: 'Roboto', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+i.fa-solid {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Istruzioni sezioni: */
+/* Container: */
+div.container {
+    padding: 0 70px;
+}
+
+/* Navbar: */
+div.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+div.logo-area, div.search-bar, div.user-area {
+    display: flex;
+    align-items: center;
+}
+
+div.logo-area > img {
+    width: 100px;
+}
+
+input#search {
+    border: solid 1px lightgray;
+    padding: 10px 15px;
+    width: 250px;
+    border-radius: 7px;
+}
+
+/* Contenuti di pagina: */
+div.box-content {
+    display: flex;
+}
+
+/* Sidebar menu: */
+div.left-menu {
+    width: 25%;
+    padding-right: 40px;
+}
+
+div.menu-item {
+    margin: 10px 0;
+}
+
+div.menu-item > span {
+    cursor: pointer;
+}
+
+/* Video content: */
+div.right-video {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    min-height: 500px;
+}
+
+div.video-item {
+    width: 200px;
+    font-size: 14px;
+    margin: 15px;
+}
+
+div.video-item > img.video-pic {
+    width: 200px;
+    height: auto;
+}
+
+div.video-item > div.video-stats {
+    color: grey;
+}

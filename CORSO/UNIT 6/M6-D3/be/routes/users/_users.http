@@ -1,0 +1,13 @@
+GET http://localhost:5050/users
+
+#####
+POST http://localhost:5050/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Matteo",
+    "lastName": "Lanci",
+    "email": "m.lanci@live.com",
+    "password": "unaverafigata!",
+    "age": 33
+}

@@ -1,0 +1,86 @@
+/** ESERCIZIO 1 */
+.jumbotron h1 {
+  color: rgb(184, 17, 17);
+}
+
+/** ESERCIZIO 2 */
+.nav span {
+  font-weight: 600;
+}
+
+/**  ESERCIZIO 3 */
+.jumbotron .lead a {
+  color: rgb(5, 163, 192);
+}
+
+/** ESERCIZIO 4 */
+.blog-post:first-of-type {
+  background: rgb(176, 255, 251, 0.5);
+  padding: 1rem;
+}
+
+/** ESERCIZIO 5 */
+.blog-post hr {
+  background: rgb(242, 10, 10);
+}
+
+/** ESERCIZIO 6 */
+nav span:nth-of-type(even) {
+  color: rgb(135, 232, 135);
+  font-weight: 800;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/** ESERCIZIO 7 */
+aside .p-4:nth-child(2) .list-unstyled li a {
+  color: rgb(255, 108, 238);
+}
+
+/** ESERCIZIO 8 */
+.blog-post:nth-of-type(2) .blog-post-meta a {
+  text-decoration: underline;
+  color: rgb(90, 90, 90);
+  font-size: 1.2rem;
+}
+
+/** ESERCIZIO 9 */
+.blog-post:last-of-type ul li:nth-child(2) {
+  color: rgb(176, 83, 165);
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+/** ESERCIZIO 10 */
+body .float-right {
+  background: rgb(214, 21, 31);
+  color: #f1f1f1;
+  padding: 0.3rem 0.5rem;
+  border-radius: 15px;
+  box-shadow: inset 0 0 1px 2px rgb(184, 17, 17);
+  font-size: 0.8rem;
+}
+
+/** ESERCIZIO 11 */
+.blog-main .blog-pagination a:last-child {
+  color: aquamarine;
+  background: #4e4e4e;
+  border: 1px solid aquamarine;
+}
+
+/** ESERCIZIO 12 */
+.blog-footer a:last-child {
+  font-size: 0.8rem;
+  color: rgb(179, 173, 0);
+}
+
+@media only screen and (max-width: 990px) {
+  .nav {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+    font-size: 0.6rem;
+  }
+}

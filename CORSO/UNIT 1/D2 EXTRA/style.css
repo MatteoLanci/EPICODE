@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  font-size: .9rem;
+  line-height: 1.5rem;
+}
+
+header {
+  height: 75px;
+  background: linear-gradient(180deg, #832736, #5c080d);
+  color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 75px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo h2 {
+  font-size: 1.7rem;
+  font-family: "Calligraffitti", cursive;
+  text-shadow: #000 3px 5px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed-follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #f1f1f190;
+  font-size: 0.8rem;
+}
+
+.feed-follow a{
+  font-size: .8rem;
+  text-decoration: none;
+  color: #f1f1f170;
+}
+
+
+#feed a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+#feed a:hover{
+  color: #f26522;
+}
+
+#follow a:hover{
+  color: #1DA1F2;
+}
+
+#twitter{
+  fill: #f1f1f190;
+}
+
+#twitter:hover{
+  fill: #1DA1F2;
+}
+
+#follow a  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  border-left: 1px solid #f1f1f170;
+  gap: 2px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-menu ul a {
+  text-decoration: none;
+  color: currentColor;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.nav-menu ul a:hover {
+  background-color: #4b0509;
+  border-radius: 20px;
+}
+
+/* ----------------------- END OF NAVBAR ----------------------- */
+main {
+  height: 100%;
+  position: relative;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main a {
+  text-decoration: none;
+  color: #832736;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #4b0509;
+}
+
+.container-img,
+.container-img ul,
+.container-img ol {
+  padding: 0.1rem 1rem;
+  width: 100%;
+}
+
+.container-img ul,
+.container-img ol{
+  padding: 1rem 2rem;
+}
+
+.container-img ul li{
+  line-height: 2rem;
+}
+
+.container-img h2{
+  margin-bottom: .5rem;
+}
+
+.container-table {
+  padding: 0px 2rem 0px 2rem;
+}
+
+.page-title {
+  padding: 4rem 0.5rem 0px 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #00000080;
+  margin: 0 1rem;
+}
+
+.container-img .img-right{
+  float: right;
+  border: 1px solid #00000050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: .7rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.container-img .img-right img {
+  width: 200px;
+  float: right;
+  padding: .5rem .5rem;
+}
+
+.container-img .img-right #img-landscape{
+  width: 400px;
+  float: right;
+  padding: .5rem .5rem;
+}
+
+.container-img .img-left{
+  float: left;
+  border: 1px solid #00000050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: .7rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.container-img .img-left img {
+  width: 200px;
+  float: left;
+  padding: .5rem .5rem;
+}
+
+/* ----------------------- TABLE ----------------------- */
+.container-table p {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+}
+
+th,
+td {
+  width: 300px;
+  text-align: start;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+tbody,
+tr {
+  border: 1px solid #fcf4e0;
+}
+
+.table-left {
+  width: 250px;
+  text-align: start;
+}
+
+.table-right {
+  width: 700px;
+  text-align: start;
+}
+
+thead {
+  background-color: #832736;
+  color: #f1f1f1;
+}
+
+.beige {
+  background-color: #fcf4e0;
+}
+/* ----------------------- END OF TABLE ----------------------- */
+
+.back-to-homepage {
+  width: 100%;
+  border-top: 2px solid #00000030;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5rem 0rem;
+}
+
+.back-to-homepage p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.back-to-homepage p a {
+  text-decoration: none;
+  color: #5c080d;
+}
+
+.back-to-homepage p a:hover {
+  text-decoration: underline;
+  color: #4b0509;
+}
+
+/* ----------------------- END OF MAIN ----------------------- */
+
+footer {
+  bottom: 0;
+  height: 50px;
+  border-top: 2px solid #00000030;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 3rem;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  color: #00000060;
+  font-size: 0.9rem;
+}
+
+/* ----------------------- END OF FOOTER ----------------------- */
+
+/* ----------------------- RESPONSIVE ----------------------- */
+
+@media only screen and (max-width:830px){
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .logo h2 {
+    font-size: 1.6rem;
+    font-family: "Calligraffitti", cursive;
+    text-shadow: #000 3px 5px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feed-follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #f1f1f190;
+    font-size: 0.6rem;
+    margin-left: -1rem;
+  }
+
+  .feed-follow a{
+    font-size: .6rem;
+  }
+  
+  #feed a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  
+  #follow a  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    border-left: 1px solid #f1f1f170;
+    gap: 2px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    list-style: none;
+  }
+  
+  .nav-menu ul a {
+    text-decoration: none;
+    color: currentColor;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+  
+  .nav-menu ul a:hover {
+    background-color: #4b0509;
+    border-radius: 20px;
+  }
+}
+
+
+@media only screen and (max-width:480px){
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .logo h2 {
+    font-size: 1.2rem;
+    font-family: "Calligraffitti", cursive;
+    text-shadow: #000 3px 5px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feed-follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #f1f1f190;
+    font-size: 0.6rem;
+    margin-left: -1rem;
+  }
+
+  .feed-follow a{
+    font-size: .6rem;
+  }
+  
+  #feed a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  
+  #follow a  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    border-left: 1px solid #f1f1f170;
+    gap: 2px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    list-style: none;
+  }
+  
+  .nav-menu ul a {
+    text-decoration: none;
+    color: currentColor;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+  
+  .nav-menu ul a:hover {
+    background-color: #4b0509;
+    border-radius: 20px;
+  }
+}
+
+

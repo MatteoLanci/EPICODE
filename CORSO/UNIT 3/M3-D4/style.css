@@ -1,0 +1,25 @@
+.navbar-brand img {
+ width: 40px;
+ margin: 0;
+ padding: 0;
+}
+
+.daily-deal-desc {
+ display: -webkit-box;
+ -webkit-line-clamp: 6;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.test-review {
+ display: -webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.bi-star-fill {
+ color: rgb(243, 207, 6);
+}

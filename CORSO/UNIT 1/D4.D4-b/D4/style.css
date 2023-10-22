@@ -1,0 +1,35 @@
+.container div {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.red-square {
+  background-color: #f0002c;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pink-square {
+  background-color: #e0abd8;
+  position: absolute;
+  top: -60px;
+  left: 60px;
+}
+.yellow-square {
+  background-color: #f0c800;
+  position: absolute;
+  top: -120px;
+  left: 120px;
+}
+.green-square {
+  background-color: #32a852;
+  position: absolute;
+  top: -180px;
+  left: 180px;
+}
+.blue-square {
+  background-color: #0486d6;
+  position: absolute;
+  top: -240px;
+  left: 240px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Epicode (Bootstrap Grid & Media Queries)</title>
+  </head>
+  <body>
+    <!-- Setup: Importare le librerie CSS e JS di Bootstrap 5! -->
+    <!-- Bootstrap 5 official: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    
+    <!-- Basic: Prendere dimestichezza con classi e componenti pre-made di Bootstrap. -->
+    <!-- Bootstrap 5 components (Btn): https://getbootstrap.com/docs/5.0/components/buttons/ -->
+    <!-- Bootstrap 5 classes: https://bootstrapcreative.com/resources/bootstrap-5-cheat-sheet-classes-index/ -->
+
+    <!-- m-* (margin sulle 4 direzioni), mx-* (margin orizzontale), my-* (margin verticale), ms-* (margine sinistro), me-* (margine destro), mt-* (margin-top), mb-* (margin-bottom). 
+    Stesso discorso per padding! -->
+
+    <!-- <div class="box d-flex bg-success text-light">
+      <div class="element text-center mx-2 p-3 ms-1 me-1 mt-1 mb-1">Element</div>
+      <div class="element text-center mx-2 p-3 ms-1 me-1 mt-1 mb-1">Element</div>
+    </div> -->
+
+    <!-- Ex. 1 - Creare una row con 4 colonne in riga fino ad MD, 2cx2r da SM in giù e 1cx4r da XS in giù. 
+    Applicare ad ogni colonna, tramite classi Bootstrap, un bordo, un background grigio ed un padding di entità 4.
+    Realizzare uno schema prima di procedere. -->
+
+    <!-- XXL-XL-MD:
+    [ Col ][ Col ][ Col ][ Col ] 
+    SM:
+    [ Col ][ Col ]
+    [ Col ][ Col ]
+    XS:
+    [ Col ]
+    [ Col ]
+    [ Col ]
+    [ Col ]
+     -->
+
+    <!-- <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12 border bg-light p-4">Column</div>
+      <div class="col-md-3 col-sm-6 col-xs-12 border bg-light p-4">Column</div>
+      <div class="col-md-3 col-sm-6 col-xs-12 border bg-light p-4">Column</div>
+      <div class="col-md-3 col-sm-6 col-xs-12 border bg-light p-4">Column</div>
+    </div> -->
+
+    <!-- Ex. 2 - Inserire del testo nelle colonne dello schema creato sopra. Fare in modo che il testo delle colonne sia:
+    - Verde, se il viewport è 1200px o più;
+    - Arancione, se il viewport è compreso fra 1199px ed 800px;
+    - Rosso, se il viewport è inferiore a 800px. -->
+
+    <!-- Risoluzione: Vedi style.css! -->
+
+    <!-- Ex. 3 - Come fa Bootstrap 5 a rimodulare la dimensione delle col-*?
+      Risp: Grazie alle media queries! 
+    Cosa sfrutta per mettere elementi block, sulla stessa linea/riga?
+      Risp: Flex. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

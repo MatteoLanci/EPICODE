@@ -1,0 +1,89 @@
+/* Global style: */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(100, 31, 164);
+}
+
+/* Box shadow examples: https://getcssscan.com/css-box-shadow-examples */
+/* Sito per quesiti JS da colloquio: https://www.javatpoint.com/javascript-interview-questions */
+
+/* Elements style: */
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div.hamb-menu {
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+div.hamb-menu::before {
+    content: "";
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    border-radius: 7px;
+    position: absolute;
+    transform: translateY(-15px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+div.hamb-menu::after {
+    content: "";
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    border-radius: 7px;
+    position: absolute;
+    transform: translateY(15px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+div.hamb-menu.open {
+    animation: open-mid 3s ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+}
+div.hamb-menu.open::before {
+    animation: open-up 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+div.hamb-menu.open::after {
+    animation: open-down 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* Esercizio: Invertire l'animazione, al rimuoversi di .open! */
+/* Suggerimento 1: Utilizza un'altra classe di appoggio per lo stato opposto. */
+/* Suggerimento 2: Le animazioni, una volta avviate sul browser, potrebbero non svilupparsi nuovamente all'applicazione di una classe! */
+/* Suggerimento 3: https://css-tricks.com/restart-css-animation/ */
+/* Suggerimento 4: https://hollyschinsky.github.io/phonegap-workshop/develop/perf-tip-minimize-reflows.html */
+
+div.hamb-menu.closing, div.hamb-menu.closing::before, div.hamb-menu.closing::after {
+    animation-direction: reverse;
+}
+
+/* Animations Area: */
+@keyframes open-up {
+    0% { transform: translateY(-15px); }
+    50% { transform: translateY(0); }
+    100% { transform: rotate(-45deg); }
+}
+@keyframes open-down {
+    0% { transform: translateY(15px); }
+    50% { transform: translateY(0); }
+    100% { transform: rotate(45deg); }
+}
+@keyframes open-mid {
+    0% { background-color: white; }
+    100% { background-color: transparent; }
+}
+
+

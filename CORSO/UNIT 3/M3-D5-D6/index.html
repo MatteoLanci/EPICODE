@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>EPICODE M3-D5 | Matteo Lanci</title>
+  </head>
+
+  <body>
+    <!--?-------------------------------- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.svg" alt="Course_Logo" id="CourseLogo" />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!--? NAVBAR DROPDOWN #1 -->
+            <li class="nav-item dropdown">
+              <div class="navlink-container">
+                <a
+                  class="nav-link dropdown pe-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Browse
+                  <span><i class="bi bi-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 2</a></li>
+                  <li><a class="dropdown-item" href="#">Action 3</a></li>
+                </ul>
+              </div>
+            </li>
+            <!--? NAVBAR DROPDOWN #2 -->
+            <li class="nav-item dropdown">
+              <div class="navlink-container">
+                <a
+                  class="nav-link dropdown pe-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Landings
+                  <span><i class="bi bi-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 2</a></li>
+                  <li><a class="dropdown-item" href="#">Action 3</a></li>
+                </ul>
+              </div>
+            </li>
+            <!--? NAVBAR DROPDOWN #3 -->
+            <li class="nav-item dropdown">
+              <div class="navlink-container">
+                <a
+                  class="nav-link dropdown pe-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                  <span><i class="bi bi-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 2</a></li>
+                  <li><a class="dropdown-item" href="#">Action 3</a></li>
+                </ul>
+              </div>
+            </li>
+            <!--? NAVBAR DROPDOWN #4 -->
+            <li class="nav-item dropdown">
+              <div class="navlink-container">
+                <a
+                  class="nav-link dropdown pe-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Account
+                  <span><i class="bi bi-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 2</a></li>
+                  <li><a class="dropdown-item" href="#">Action 3</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--& NAVBAR RIGHT SECTION -->
+        <div class="nav-user-wrapper d-flex gap-3">
+          <div class="navbar-user-section dropdown d-flex gap-2">
+            <a
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="nav-user-icon-wrapper dropdown bg-body-tertiary">
+                <span class="nav-notification-badge"></span>
+                <i class="bx bx-bell"></i>
+              </div>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end mt-1">
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Notification
+                  <span class="text-danger fw-bold ms-4">1</span>
+                </a>
+              </li>
+            </ul>
+            <a
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="nav-user-icon-wrapper dropdown me-2">
+                <span class="nav-user-badge"></span>
+                <img src="./assets/avatar-1.jpg" alt="avatar-1" />
+              </div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end mt-1 px-0">
+              <div class="px-2 d-flex align-items-center gap-2">
+                <div class="nav-user-icon-wrapper dropdown me-2 ms-2">
+                  <span class="nav-user-badge"></span>
+                  <img src="./assets/avatar-1.jpg" alt="avatar-1" />
+                </div>
+                <div class="user-menu-info">
+                  <p class="m-0">Nome Cognome</p>
+                  <p class="m-0">user@geeksui.com</p>
+                </div>
+              </div>
+              <li class="dropdown-divider"></li>
+              <li class="py-1">
+                <a class="dropdown-item" href="#">
+                  <span><i class="bi bi-person mx-2"></i></span>
+                  <span class="m-0">Profile</span>
+                </a>
+              </li>
+              <li class="py-1">
+                <a class="dropdown-item" href="#">
+                  <span><i class="bi bi-star mx-2"></i></span>
+                  <span class="m-0">Subscription</span>
+                </a>
+              </li>
+              <li class="py-1">
+                <a class="dropdown-item" href="#">
+                  <span><i class="bi bi-gear-wide mx-2"></i></span>
+                  <span class="m-0">Settings</span>
+                </a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="py-1">
+                <a class="dropdown-item" href="#">
+                  <span><i class="bi bi-power mx-2"></i></span>
+                  <span class="m-0">Log Out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end NAVBAR IMG SECTION -->
+          <!-- NAVBAR TOGGLER BTN -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!--?-------------------------------- MAIN SECTION -->
+    <!--!------------------- JUMBOTRONE SECTION -->
+    <section class="jumbotrone">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row m-0 align-items-center">
+          <!--& SEZIONE TESTUALE JUMBOTRONE -->
+          <div class="col-sm-6 col-full p-0 m-0 d-flex justify-content-center">
+            <div class="card mb-2 border-0">
+              <div class="card-body p-0">
+                <h5 class="card-title text-white">Welcome Web Students!</h5>
+                <p class="card-text">
+                  Hand-picked instructor and expertly crafted courses, designed
+                  for the modern students and enterpreneur.
+                </p>
+                <a href="#" class="btn btn-success fw-bold py-3 px-3"
+                  >Browse Courses</a
+                >
+                <a href="#" class="btn btn-light fw-bold py-3 px-3"
+                  >Are You Instructor?</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--& SEZIONE IMG JUMBOTRONE -->
+          <div class="col-sm-6 col-full p-0 m-0 d-flex justify-content-center">
+            <div class="jumbotrone-img-wrapper">
+              <img src="./assets/hero-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--!------------------- SUB-JUMBOTRONE SECTION -->
+    <section class="sub-jumbotrone">
+      <div class="container-fluid">
+        <div class="row">
+          <!--& SUB-JUMBO EL. #1 -->
+          <div class="offset-xl-2 col-xl-3 col-lg-4 col-md-4 col-12 p-0">
+            <div class="card border-0">
+              <div class="row g-0">
+                <div
+                  class="col-2 col-md-3 d-flex align-items-center justify-content-center"
+                >
+                  <i class="bx bx-camera-movie rounded-circle p-3"></i>
+                </div>
+                <div class="col-10 col-md-9">
+                  <div class="card-body px-0">
+                    <h6 class="card-title">30,000 online courses</h6>
+                    <p class="card-text">Enjoy a variety of fresh topics</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--& SUB-JUMBO EL. #2 -->
+          <div class="col-xl-3 col-md-4 col-12 p-0">
+            <div class="card border-0">
+              <div class="row g-0">
+                <div
+                  class="col-2 col-md-3 d-flex align-items-center justify-content-center"
+                >
+                  <i class="bx bx-group rounded-circle p-3"></i>
+                </div>
+                <div class="col-10 col-md-9">
+                  <div class="card-body px-0">
+                    <h6 class="card-title">Expert instruction</h6>
+                    <p class="card-text">Find the right instructor for you</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--& SUB-JUMBO EL. #3 -->
+          <div class="col-xl-3 col-md-4 col-12 p-0">
+            <div class="card border-0">
+              <div class="row g-0">
+                <div
+                  class="col-2 col-md-3 d-flex align-items-center justify-content-center"
+                >
+                  <i class="bx bx-time rounded-circle p-3"></i>
+                </div>
+                <div class="col-10 col-md-9">
+                  <div class="card-body px-0">
+                    <h6 class="card-title">Lifetime access</h6>
+                    <p class="card-text">Learn on your schedule</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--!------------------- COURSES SECTION-->
+    <div class="container">
+      <!--todo----- RECOMENDED FOR YOU SECTION -->
+      <section class="recomended my-5">
+        <div id="carouselOne" class="carousel slide carousel-dark">
+          <div
+            class="carousel-inner mx-auto pt-5 pb-4"
+            style="max-width: 1200px"
+          >
+            <h4 class="mb-3 px-4">Recomended to you</h4>
+            <!--& WRAPPER #1 -->
+            <div class="row m-0 cards-wrapper">
+              <div class="carousel-item d-flex p-0 m-0">
+                <!--? CARD #1 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-graphql.jpg"
+                      class="card-img-top"
+                      alt="course1"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            GraphQL: introduction to graphQL for beginners
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>2h 40m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Advance</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">2.5</span>
+                          <span class="text-black-50">(1,500)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$500</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$600</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-5.jpg"
+                              alt="avatar-5"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1"
+                            >Brooklyn Simmons</span
+                          >
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i data-fill="&#xF199" class="bi bi-bookmark"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #2 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="course2"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            A Complete Beginner's Guide to JavaScript
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>4h 10m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Advance</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">3.5</span>
+                          <span class="text-black-50">(7,500)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$700</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$850</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-1.jpg"
+                              alt="avatar-1"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Jenny Wilson</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #3 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="course3"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            Beginning Node.js, Express & MongoDB Development
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>2h 00m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Intermediate</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">4.0</span>
+                          <span class="text-black-50">(15,700)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$800</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$950</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-3.jpg"
+                              alt="avatar-3"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Sina Ray</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #4 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="course4"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            Laravel: The Ultimate Beginner's Guide To Learn
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>1h 00m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Beginner</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <span class="mx-1">4.5</span>
+                          <span class="text-black-50">(2,500)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$170</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$220</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-7.jpg"
+                              alt="avatar-7"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Sobo Rikhan</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? END CARDS -->
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-start"
+            type="button"
+            data-bs-target="#carouselOne"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-end"
+            type="button"
+            data-bs-target="#carouselOne"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!--todo----- MOST POPULAR SECTION -->
+      <section class="mostPopular">
+        <div id="carouselTwo" class="carousel slide carousel-dark">
+          <div class="carousel-inner mx-auto py-5" style="max-width: 1200px">
+            <h4 class="mb-3 px-4">Most Popular</h4>
+            <!--& WRAPPER #1 -->
+            <div class="row m-0 cards-wrapper">
+              <div class="carousel-item d-flex p-0 m-0">
+                <!--? CARD #1 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-html.jpg"
+                      class="card-img-top"
+                      alt="course1"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            HTML Full Course - Build a Website Tutorial
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>3h 16m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Beginner</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">3.0</span>
+                          <span class="text-black-50">(1,600)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$550</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$700</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-4.jpg"
+                              alt="avatar-4"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Miston Wilson</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #2 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="course2"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            A Complete Beginner's Guide to JavaScript
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>4h 10m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Advance</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">3.5</span>
+                          <span class="text-black-50">(7,500)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$700</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$850</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-1.jpg"
+                              alt="avatar-1"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Jenny Wilson</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #3 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="course3"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            Beginning Node.js, Express & MongoDB Development
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>2h 00m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Intermediate</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">4.0</span>
+                          <span class="text-black-50">(15,700)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$800</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$950</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-3.jpg"
+                              alt="avatar-3"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Sina Ray</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #4 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-react.jpg"
+                      class="card-img-top"
+                      alt="course4"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            How to easly create a website with React
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>3h 55m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Advance</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <span class="mx-1">4.5</span>
+                          <span class="text-black-50">(1,500)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$600</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$750</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-6.jpg"
+                              alt="avatar-6"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">April Noms</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? END CARDS -->
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-start"
+            type="button"
+            data-bs-target="#carouselTwo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-end"
+            type="button"
+            data-bs-target="#carouselTwo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!--todo----- TRENDING SECTION -->
+      <section class="trending">
+        <div id="carouselThree" class="carousel slide carousel-dark">
+          <div class="carousel-inner mx-auto py-5" style="max-width: 1200px">
+            <h4 class="mb-3 px-4">Trending</h4>
+            <!--& WRAPPER #1 -->
+            <div class="row m-0 cards-wrapper">
+              <div class="carousel-item d-flex p-0 m-0">
+                <!--? CARD #1 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-gatsby.jpg"
+                      class="card-img-top"
+                      alt="course1"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.9rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            Revolutionize how you build the web
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-5 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>1h 46m</span>
+                        </div>
+                        <div class="col-7 card-text pe-0 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Intermediate</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">2.0</span>
+                          <span class="text-black-50">(16,500)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$800</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$850</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-1.jpg"
+                              alt="avatar-4"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Jenny Wilson</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #2 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-html.jpg"
+                      class="card-img-top"
+                      alt="course2"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            HTML Full Course - Build a Website Tutorial
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>3h 16m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Beginner</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">3.0</span>
+                          <span class="text-black-50">(1,600)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$550</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$700</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-4.jpg"
+                              alt="avatar-1"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Minston Wilson</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #3 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="course3"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            Beginning Node.js, Express & MongoDB Development
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>2h 00m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Intermediate</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                          <span class="mx-1">4.0</span>
+                          <span class="text-black-50">(15,700)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$800</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$950</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-3.jpg"
+                              alt="avatar-3"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Sina Ray</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? CARD #4 -->
+                <div
+                  class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="card mx-1 border-0 shadow-sm"
+                    style="max-width: 250px"
+                  >
+                    <img
+                      src="./assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="course4"
+                    />
+                    <div class="card-body px-0 py-3">
+                      <div class="mb-2 row m-0">
+                        <div
+                          class="col-full card-text px-1"
+                          style="font-size: 0.8rem"
+                        >
+                          <p class="mb-0 fw-bold">
+                            Laravel: The Ultimate Beginner's Guide To Learn
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="my-2 row m-0 text-black-50"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-6 card-text ps-1 pe-0">
+                          <i class="bi bi-clock"></i>
+                          <span>1h 00m</span>
+                        </div>
+                        <div class="col-6 card-text pe-1 ps-0">
+                          <i class="bi bi-bar-chart-fill"></i>
+                          <span>Beginner</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0 text-warning">
+                        <div class="col-full px-1" style="font-size: 0.8rem">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <span class="mx-1">4.5</span>
+                          <span class="text-black-50">(2,500)</span>
+                        </div>
+                      </div>
+                      <div class="my-2 row m-0">
+                        <div class="col-full px-1">
+                          <span class="fw-bold">$170</span>
+                          <span
+                            class="text-decoration-line-through text-black-50"
+                            style="font-size: 0.8rem"
+                            >$220</span
+                          >
+                        </div>
+                      </div>
+                      <hr class="mb-3 mt-2" />
+                      <div
+                        class="row m-0 d-flex align-items-center"
+                        style="font-size: 0.8rem"
+                      >
+                        <div class="col-11 d-flex align-items-center ps-1 pe-0">
+                          <div
+                            class="card-footer-img-container"
+                            style="width: 30px; height: 30px"
+                          >
+                            <img
+                              src="./assets/avatar-7.jpg"
+                              alt="avatar-7"
+                              class="rounded-circle border-0"
+                              style="width: 100%"
+                            />
+                          </div>
+                          <span class="text-black-50 ms-1">Sobo Rikhan</span>
+                        </div>
+                        <div class="col-1 ps-0 pe-1 text-black-50">
+                          <i class="bi bi-bookmark" data-fill="&#xF199"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--? END CARDS -->
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-start"
+            type="button"
+            data-bs-target="#carouselThree"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-end"
+            type="button"
+            data-bs-target="#carouselThree"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!--?-------------------------------- FOOTER SECTION -->
+    <section class="container-fluid footer mt-5 py-3 shadow">
+      <div class="row footer-content-wrapper text-center">
+        <div class="col-full col-sm-5 footer-section-one">
+          <p class="mb-0 text-black-50">© 2022 Geeks. All Rights Reserved</p>
+        </div>
+        <div
+          class="col-full col-sm-5 footer-section-two d-flex justify-content-center gap-4"
+        >
+          <a href="#" class="text-decoration-none text-black-50">Privacy</a>
+          <a href="#" class="text-decoration-none text-black-50">Terms</a>
+          <a href="#" class="text-decoration-none text-black-50">Feedback</a>
+          <a href="#" class="text-decoration-none text-black-50">Support</a>
+        </div>
+      </div>
+    </section>
+
+    <!--& SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,317 @@
+.navbarWrapper {
+  background: linear-gradient(to right, #a7e2e2, #cdf7f7);
+  box-shadow: 0 0 10px #7ca3ad;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.navbarWrapperDark {
+  background: linear-gradient(to right, #161616, #3d3d3d);
+  box-shadow: 0 0 10px #7ca3ad;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  color: #c2eff7;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 2rem;
+}
+.logoWrapperDark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 2rem;
+  color: #c2eff7;
+}
+
+.logoAnimation {
+  height: 80px;
+  position: absolute;
+  top: -20px;
+  right: -70px;
+}
+
+.navUserAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 5px #0e0e0e;
+  cursor: pointer;
+}
+
+/*! OFFCANVASS MENU STYLE */
+.navbarMenu {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background: #c2eff7 !important;
+  box-shadow: 0 0 10px #424444;
+}
+
+.navbarMenuDark {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background: #19414bf5 !important;
+  box-shadow: 0 0 10px #e4e4e4;
+}
+
+.userMenuBody {
+  position: relative;
+}
+
+.userMenuHeaderWrapper {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.proPicIcon {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: #f0ffff;
+  box-shadow: 0 0 5px #0e0e0e;
+  cursor: pointer;
+}
+
+.menuPropic {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 5px #0e0e0e;
+}
+.menuPropicDark {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 5px #e4e4e4;
+}
+
+.userInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.userDataElWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #7ca3ad;
+  background: #f0ffff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.userDataName {
+  margin: 0;
+  padding-right: 2.5rem;
+}
+
+.userDataIcon {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+.manageAccountBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  background: #4a9e93;
+  transition: all 0.1s;
+}
+.manageAccountBtn:hover {
+  background: #5fcabc;
+  color: #0e0e0e;
+}
+.manageAccountBtn:active {
+  background: #4a9e93 !important;
+}
+
+.userEditBtnsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.userEditInput {
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #7ca3ad;
+  background: #f7e99c;
+  max-width: 140px !important;
+}
+
+.userEditSaveBtn {
+  border: 1px solid #4a9e93;
+  background: #4a9e93;
+  transition: all 0.2s;
+  width: 10rem;
+}
+.userEditSaveBtn:hover {
+  box-shadow: 0 0 5px #41a89b;
+  background: #347970;
+}
+.userEditSaveBtn:active {
+  border: 1px solid #4a9e93 !important;
+  background: #4a9e93 !important;
+}
+
+.userEditCancBtn {
+  border: 1px solid #b80606 !important;
+  background: #b80606;
+  transition: all 0.2s;
+  width: 10rem;
+}
+.userEditCancBtn:hover {
+  box-shadow: 0 0 5px #94200b;
+  background: #bd422c;
+}
+.userEditCancBtn:active {
+  border: 1px solid #b80606 !important;
+  background: #b80606 !important;
+}
+
+.userDeleteAccountBtn {
+  width: 100%;
+  background: #b80606;
+  border: none;
+  transition: all 0.1s;
+}
+.userDeleteAccountBtn:hover {
+  background: #b80606;
+  box-shadow: 0 0 5px #b80606;
+  color: #0e0e0e;
+}
+.userDeleteAccountBtn:active {
+  background: #b80606 !important;
+  border: none !important;
+}
+
+.userMenuFooterWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.supportWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* flex-direction: column; */
+  width: 100% !important;
+  box-shadow: 0 0 5px #347970;
+  background: #f0ffff;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.supportAnimationWrapper {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #0e0e0e;
+  padding: 0.5rem;
+}
+.supportAnimation {
+  height: 50px;
+  width: 50px;
+}
+
+.supportBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  /* width: -moz-fit-content; */
+  /* width: fit-content; */
+  width: 100%;
+}
+
+.supportIcon {
+  font-size: 1.3rem;
+}
+
+.logoutBtnWrapper {
+  width: 100%;
+}
+.logoutBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 10px;
+}
+.logoutAnimation {
+  height: 30px !important;
+  width: 30px !important;
+  color: #0e0e0e;
+  margin-left: -4rem;
+}
+
+@media screen and (max-width: 500px) {
+  .navbarMenu,
+  .navbarMenuDark {
+    width: 70% !important;
+  }
+  .userMenuIdField {
+    width: 200px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .userEditSaveBtn,
+  .userEditCancBtn {
+    font-size: 0.8rem;
+  }
+  .userMenuFooterWrapper {
+    padding: 0.5rem 1rem !important;
+    gap: 1rem;
+  }
+  .userDataLocation p {
+    font-size: 0.8rem;
+  }
+  .supportAnimation {
+    height: 30px;
+    width: 30px;
+  }
+  .supportText {
+    font-size: 1rem;
+  }
+  .logoAnimation {
+    right: -85px;
+  }
+}

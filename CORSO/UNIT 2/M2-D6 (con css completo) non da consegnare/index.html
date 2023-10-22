@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BuyView - Shop Online | Matteo Lanci</title>
+  </head>
+  <body>
+    <!-- ? ------------------------------------------------  NAVBAR SECTION -->
+    <header>
+      <h1>
+        <a href="#" id="navTitle">BuyView</a>
+      </h1>
+      <input
+        id="changeNavTitle"
+        class="changeSomething"
+        onclick="changeTitle()"
+        type="button"
+        value="change title" />
+    </header>
+
+    <!-- ? ------------------------------------------------ MAIN SECTION -->
+    <main class="mainClass" id="1">
+      <table border="0">
+        <!--* -------------------------- START OF TABLE HEADING -->
+        <thead>
+          <tr>
+            <th colspan="3">
+              <input
+                type="button"
+                onclick="changeBG()"
+                class="changeSomething"
+                value="change BG color" />
+            </th>
+          </tr>
+          <tr>
+            <th colspan="3"><h3>TOP 5 PRODUCTS</h3></th>
+          </tr>
+        </thead>
+        <!--* -------------------------- END OF TABLE HEADING -->
+        <tbody>
+          <!--! -------------------------------- PRODUCT #1 -->
+          <tr>
+            <td rowspan="3" class="prod-img-container">
+              <img
+                onclick="imgDisappear()"
+                src="./assets/external-hdd.jpg"
+                alt="External HDD" />
+            </td>
+            <td colspan="2" align="center" class="prod-title">
+              External Hard Drive 2TB, WESTERN DIGITAL
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" class="prod-description">
+              WD Elements portable hard drives with USB 3.0 give you reliable,
+              high-capacity on-the-go storage, fast data transfer speeds,
+              universal connectivity, and immense capacity for the discerning
+              consumer.
+            </td>
+          </tr>
+          <tr>
+            <td class="prod-price">66<span>,99 </span>€</td>
+            <td align="center">
+              <a class="amazonLink" href="bit.ly/3KeM9SK" target="_blank"
+                ><i class="bi bi-box-arrow-up-right"></i
+              ></a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea
+                name="prod-textarea"
+                id="prod-textarea"
+                rows="3"
+                placeholder="Scrivi una recensione su questo prodotto..."></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="delimiter"><button>Pubblica</button></td>
+          </tr>
+          <!--! -------------------------- END OF PRODUCT #1 -->
+
+          <!--! -------------------------------- PRODUCT #2 -->
+          <tr>
+            <td rowspan="3" class="prod-img-container">
+              <img src="./assets/videocamera-interni.jpg" alt="Camera Indoor" />
+            </td>
+            <td colspan="2" align="center" class="prod-title">
+              Telecamera Wi-Fi indoor 1080P, IMOU
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" class="prod-description">
+              Imou Indoor Wi-Fi Camera, 1080P IP Surveillance Camera, Motion
+              Tracking with Siren, Baby Monitor with AI Human Detection, Two-Way
+              Audio & Night Vision, Ranger 2
+            </td>
+          </tr>
+          <tr>
+            <td class="prod-price">29<span>,99 </span>€</td>
+            <td align="center">
+              <a class="amazonLink" href="bit.ly/3GobOau" target="_blank"
+                ><i class="bi bi-box-arrow-up-right"></i
+              ></a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea
+                name="prod-textarea"
+                id="prod-textarea"
+                rows="3"
+                placeholder="Scrivi una recensione su questo prodotto..."></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="delimiter"><button>Pubblica</button></td>
+          </tr>
+          <!--! -------------------------- END OF PRODUCT #2 -->
+
+          <!--! -------------------------------- PRODUCT #3 -->
+          <tr>
+            <td rowspan="3" class="prod-img-container">
+              <img src="./assets/hub-usbc.jpg" alt="Hub USB" />
+            </td>
+            <td colspan="2" align="center" class="prod-title">
+              Hub from USB-C to USB-A x4, NOVOO 7
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" class="prod-description">
+              USB C Hub, NOVOO 7 in 1 Multiport USB C to USB Adapter x 4, Type C
+              100W PD, 4K HDMI, RJ45 Ethernet, USB C Adapter Compatible with
+              MacBook Pro/Air and Other Type C Devices
+            </td>
+          </tr>
+          <tr>
+            <td class="prod-price">35<span>,99 </span>€</td>
+            <td align="center">
+              <a class="amazonLink" href="bit.ly/3Ugnwd1" target="_blank"
+                ><i class="bi bi-box-arrow-up-right"></i
+              ></a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea
+                name="prod-textarea"
+                id="prod-textarea"
+                rows="3"
+                placeholder="Scrivi una recensione su questo prodotto..."></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="delimiter"><button>Pubblica</button></td>
+          </tr>
+          <!--! -------------------------- END OF PRODUCT #3 -->
+
+          <!--! -------------------------------- PRODUCT #4 -->
+          <tr>
+            <td rowspan="3" class="prod-img-container">
+              <img
+                src="./assets/supporto-smartphone.jpg"
+                alt="Smartphone Support" />
+            </td>
+            <td colspan="2" align="center" class="prod-title">
+              Desk smartphone support, YUMAZLA
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" class="prod-description">
+              YUMAZLA metal desktop phone stand, adjustable phone stand [2023
+              most stable and sturdy], universal desk phone stand for iPhone
+              series, Samsung, tablets and other smartphones
+            </td>
+          </tr>
+          <tr>
+            <td class="prod-price">13<span>,99 </span>€</td>
+            <td align="center">
+              <a class="amazonLink" href="bit.ly/414fsxZ" target="_blank"
+                ><i class="bi bi-box-arrow-up-right"></i
+              ></a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea
+                name="prod-textarea"
+                id="prod-textarea"
+                rows="3"
+                placeholder="Scrivi una recensione su questo prodotto..."></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="delimiter"><button>Pubblica</button></td>
+          </tr>
+          <!--! -------------------------- END OF PRODUCT #4 -->
+
+          <!--! -------------------------------- PRODUCT #5 -->
+          <tr>
+            <td rowspan="3" class="prod-img-container">
+              <img
+                src="./assets/multipresa-verticale.jpg"
+                alt="Vertical Power Strip" />
+            </td>
+            <td colspan="2" align="center" class="prod-title">
+              Vertical Power Strip, HOVNEE
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" class="prod-description">
+              HOVNEE vertical power strip equipped with 12 sockets and 5 USB,
+              suitable for mobile phones, laptops and lamps, meet your different
+              charging needs.
+            </td>
+          </tr>
+          <tr>
+            <td class="prod-price">38<span>,99 </span>€</td>
+            <td align="center">
+              <a class="amazonLink" href="bit.ly/3ZR4WJj" target="_blank"
+                ><i class="bi bi-box-arrow-up-right"></i
+              ></a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea
+                name="prod-textarea"
+                id="prod-textarea"
+                rows="3"
+                placeholder="Scrivi una recensione su questo prodotto..."></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="delimiter"><button>Pubblica</button></td>
+          </tr>
+          <!--! -------------------------- END OF PRODUCT #5 -->
+        </tbody>
+      </table>
+    </main>
+
+    <!-- ? ------------------------------------------------ FOOTER SECTION -->
+    <footer>
+      <h3><a href="#">BuyView</a></h3>
+      <p>
+        <a href="#" id="address"
+          >Via dei Magazzini Generali, 16, 00154 Roma RM</a
+        >
+      </p>
+      <input
+        type="button"
+        value="click me"
+        class="changeSomething"
+        id="changeAddress"
+        onclick="changeAddress()" />
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

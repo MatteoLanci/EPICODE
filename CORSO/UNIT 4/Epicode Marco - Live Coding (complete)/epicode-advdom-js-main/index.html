@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>[JS] Advanced DOM</title>
+  </head>
+  <body>
+    <h1>Input, Events & Listeners!</h1>
+    <div id="main-content">
+      <label for="my-input">Il mio input-text:</label><br />
+      <input type="text" class="text" id="my-input" onkeyup="consoleMe()" /><br /><br />
+      <button type="button" id="my-button">Click me!</button>
+    </div>
+    <br /><br />
+    <hr />
+    <div class="container-inputs">
+      <label for="text1">Plain text:</label>
+      <input type="text" name="text1" id="text1" value="10" />
+
+      <!-- Button -->
+      <input type="button" value="Bottone" /><br />
+
+      <!-- Checkbox -->
+      <label for="soccer">Calcio</label>
+      <input type="checkbox" name="soccer" id="soccer" /><br />
+      <label for="fishing">Pesca</label>
+      <input type="checkbox" name="fishing" id="fishing" /><br />
+      <label for="horse">Cavallo</label>
+      <input type="checkbox" name="horse" id="horse" /><br />
+
+      <!-- Radio -->
+      <input type="radio" id="huey" name="drone" value="huey" checked />
+      <label for="huey">Huey</label>
+      <input type="radio" id="dewey" name="drone" value="dewey" />
+      <label for="dewey">Dewey</label>
+      <input type="radio" id="louie" name="drone" value="louie" />
+      <label for="louie">Louie</label><br>
+
+      <!-- Date -->
+      <label for="date">Data di nascita</label>
+      <input type="date" name="date" id="date" /><br />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" /><br />
+
+      <!-- File -->
+      <label for="file">File:</label>
+      <input type="file" name="file" id="file" /><br />
+
+      <!-- Hidden -->
+      <input type="hidden" name="hidden" />
+
+      <!-- Image (Template button) -->
+      <input type="image" src="" alt="image" /><br>
+
+      <!-- Number -->
+      <label for="number">Number:</label>
+      <input type="number" name="number" id="number" /><br />
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" /><br />
+
+      <!-- Submit -->
+      <label for="submit">Submit:</label>
+      <input type="submit" value="Invia" /><br />
+
+      <!-- Text -->
+      <label for="text2">Plain text:</label>
+      <input type="text" name="text2" id="text2" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

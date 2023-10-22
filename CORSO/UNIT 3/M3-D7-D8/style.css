@@ -1,0 +1,262 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/*?----------------------------------- NAVBAR */
+.nav-right-section {
+  position: fixed;
+  top: 1.7rem;
+  right: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-collapse {
+  position: relative;
+}
+.nav-right-wrapper {
+  position: absolute;
+  right: 66px;
+  top: 7px;
+}
+@media only screen and (max-width: 991px) {
+  .nav-right-wrapper {
+    right: 20px;
+    top: 85%;
+  }
+}
+.nav-user-tag {
+  color: #ffffff;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+}
+
+.search {
+  position: relative;
+}
+.search i {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.searchbar {
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  width: 0px;
+  transition: all 0.5s;
+  line-height: 1.5rem;
+  height: 2rem;
+  padding: 0px 2rem 0px 1.1rem;
+  background: transparent;
+  color: #ffffff;
+}
+.search:hover .searchbar,
+.searchbar:focus,
+.searchbar:valid {
+  width: 180px;
+  background: #ffffff40;
+}
+
+/*?----------------------------------- CAT. HEADER RIGHT SECTION (VIEW OPTION BTN) */
+.view-option .btn {
+  border-radius: 0;
+}
+.view-option .btn:first-of-type {
+  border: 2px solid !important;
+  background: #ffffff40;
+}
+
+/*?----------------------------------- CARDS SECTION */
+.category-header {
+  margin-top: 5rem;
+}
+
+.row-title {
+  font-size: 1.2rem;
+}
+
+.maturity {
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 5px;
+}
+
+.card-overlay-commands .bi {
+  font-size: 0.9rem;
+  background: #00000080;
+  transition: all 0.4s ease;
+}
+.card-overlay-commands .bi:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.card-overlay-genre a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+  transition: all 0.4s ease;
+}
+.card-overlay-genre a:hover {
+  color: #e50914;
+}
+
+/*!----------------------------------- BOOTSTRAP EDITS */
+/*!--------------- NAVBAR LEFT SECTION */
+.navbar-brand {
+  width: 140px;
+  cursor: pointer;
+}
+.navbar-brand img {
+  width: 100%;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 200;
+}
+.active {
+  font-weight: 500;
+}
+
+/*!--------------- NAVBAR ICON ON RIGHT */
+.bi-search {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.bi-bell-fill {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+span.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+.dropdown-toggle img,
+.dropdown-item img {
+  width: 30px;
+}
+
+/*!--------------- CARD NETFLIX TV SHOW */
+.card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card-img-overlay {
+  background: linear-gradient(to top, #000000, #00000060);
+  opacity: 0;
+  top: -200px;
+  position: absolute;
+  overflow: hidden;
+}
+.card:hover .card-img-overlay {
+  opacity: 1;
+  top: 0;
+  transition: 0.4s ease;
+  transition-delay: 0.4s;
+}
+
+.card-overlay-info-wrapper span:last-of-type {
+  font-size: 0.8rem;
+}
+
+/*?----------------------------------- FOOTER SECTION */
+.footer {
+  max-width: 1000px;
+  margin-top: 10rem !important;
+}
+
+.social-links-footer a {
+  color: #ffffff70;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+.social-links-footer a:hover {
+  color: #ffffff;
+}
+
+.footer-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+.footer-links-wrapper a {
+  text-decoration: none;
+  color: #ffffff70;
+  font-size: 0.7rem;
+}
+.footer-links-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.footer-btn {
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+  padding: 3px 6px !important;
+  border-radius: 3px !important;
+}
+
+.footer p:last-of-type {
+  color: #ffffff70;
+  font-size: 0.7rem;
+}
+
+/*! ANIMAZIONE PER FAR APPARIRE LE ROW DURANTE LO SCROLL ALLA LORO ALTEZZA */
+@keyframes enter-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .image-animation {
+    animation: enter-animation 1.5s 1;
+  }
+}

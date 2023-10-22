@@ -1,0 +1,13 @@
+.lightTheme,
+.darkTheme {
+  /* transition: color 1s ease; */
+  width: 40px !important;
+  border-radius: 50% !important;
+}
+
+.navLightTheme {
+  box-shadow: 0 0 10px #00000070;
+}
+.navDarkTheme {
+  box-shadow: 0 0 10px #ececec70;
+}

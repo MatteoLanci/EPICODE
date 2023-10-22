@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Epicode (Transform & Transition)</title>
+  </head>
+  <body>
+    <style>
+      body {
+        padding: 3rem;
+      }
+      .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div.my-box {
+        background: cornflowerblue;
+        width: 250px;
+        height: 250px;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border-top: solid 4px lightgrey;
+        border-bottom: solid 4px lightgrey;
+        border-left: solid 4px black;
+        border-right: solid 4px black;
+      }
+      /* TRANSFORM: */
+      div.test-class {
+        /* rotate(a), rotateX(a), rotateY(a), rotateZ(a) - a in [deg, turn] */
+        /* transform: rotate(.5turn); */
+        /* scale(a), scaleX(a), scaleY(a), scaleZ(a) - a in [0,1,2...] */
+        /* transform: scaleZ(0.5); */
+        /* skew(a,b), skewX(a), skewY(a) - a in [deg] */
+        /* transform: skew(30deg, 20deg); */
+        /* translate(a,b), translateX(a), translateY(b) - a,b in [px, %] */
+        /* transform: translate(100px, 120px); */
+        /* perspective(a) - a in [%] (https://developer.mozilla.org/en-US/docs/Web/CSS/perspective) */
+      }
+      /* TRANSITION: */
+      div.animated-class:hover {
+        /* Multiple transitions on same CSS line: */
+        transition: transform 3s linear 0.3s, background 3s ease 0.3s;
+        transform: translateX(200px);
+        background: crimson;
+        /* Rule structure: transition: property duration timing_fn delay */
+        /* Timing Function: https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function */
+        /* Bezier Curve: https://cubic-bezier.com/ */
+        /* Bezier Curve (Math): https://it.wikipedia.org/wiki/Curva_di_B%C3%A9zier */
+      }
+    </style>
+    <div class="flex-center">
+      <div class="my-box flex-center test-class animated-class">
+        MyBox
+      </div>
+    </div>
+  </body>
+</html>

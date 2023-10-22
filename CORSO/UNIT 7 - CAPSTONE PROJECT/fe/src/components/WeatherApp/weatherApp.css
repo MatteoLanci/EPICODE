@@ -1,0 +1,95 @@
+.weatherMainWrapper {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background: #b2e8f7;
+  opacity: 80%;
+  box-shadow: 0 0 10px #00000070;
+  color: #414141;
+}
+
+.weatherMainWrapperDark {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 5px #f4f7f5;
+  background: #19414bf5;
+  opacity: 100%;
+  color: #ececec;
+}
+
+.tempWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 0 5px #638b8b;
+  background: #f0ffff;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tempWrapperDark {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 0 5px #638b8b;
+  background: #f0ffff;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #222222;
+}
+
+.singleTempWrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 500;
+}
+
+.singleTempWrapperDark {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 500;
+  color: #222222;
+}
+
+.tempLowIcon {
+  color: #0099ff;
+}
+.tempHighIcon {
+  color: #d30000;
+}
+.humidIcon {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .weatherDataWrapper {
+    font-size: 0.9rem;
+  }
+  .tempWrapper {
+    gap: 0.9rem;
+  }
+  .singleTempWrapper {
+    font-size: 0.8rem;
+  }
+  .tempWrapper {
+    gap: 0.5rem !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .singleTempWrapper {
+    font-size: 0.7rem;
+  }
+}

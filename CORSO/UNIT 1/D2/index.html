@@ -1,0 +1,185 @@
+<!-- BUILD -->
+
+<!-- Da un Mockup a HTML+CSS
+
+Il tuo compito sarà creare una vera webpage a partire dall'immagine mockup allegata.
+
+
+Troverai tutti gli asset necessari in una cartella chiamata "assets".
+
+
+L'obiettivo è ricreare la pagina il più simile possibile all'immagine allegata.
+
+
+Come convertire efficacemente un'immagine mockup in HTML+CSS?
+
+
+1. Crea i "contenitori" principali.
+
+
+Analizza l'immagine e dividila in blocchi, partendo da quelli più grandi ed esterni fino a raggiungere le parti più interne della pagina.
+
+Questi blocchi diventeranno dei blocchi div, e puoi usarli per stilizzare i principali elementi gerarchici della pagina.
+
+Non focalizzarti troppo sugli elementi minori, almeno all'inizio: identifica solo la struttura principale e ricreala in HTML.
+
+
+2. Inserisci del contenuto, anche minimo
+
+
+Riempire i blocchi delineati con del contenuto, anche "finto", ti aiuterà a visualizzare il tuo progresso all'interno del browser (senza nessun contenuto, tutto quello che vedrai sarà una pagina bianca!).
+
+
+3. Personalizza il CSS
+
+
+Aggiungi classi e id agli elementi HTML, se intendi stilizzarli con del CSS. Se trovi stili che intendi riapplicare su multipli elementi, utilizza le classi invece degli id.
+
+Cerca di non utilizzare styling in-line, ma definisci gli stili direttamente in tag o file css. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>EPICODE | Mockup | D2</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#"><img src="assets/logo.png" alt="simply recipes logo" /></a>
+      </nav>
+    </header>
+    <main>
+      <div id="subtitle-text">
+        Part of&nbsp&nbsp<span class="bold-text"
+          >a simply fabulous thanksgiving</span
+        >
+      </div>
+      <div id="container">
+        <section class="recipe-header">
+          <div class="title">
+            <h1>Focaccia with Caramelized Onions, Cranberries and Brie</h1>
+          </div>
+          <div class="subtitle">
+            Wow your taste buds with this festive focaccia appetizer topped with
+            sweet caramelized onions, tart cranberries and creamy brie. It will
+            become your new favourite holiday starter!
+          </div>
+          <a id="img" href="#"
+            ><img src="assets/focaccia.png" alt="image of gourmet focaccia"
+          /></a>
+          <p id="img-desc">
+            <caption>
+              Image:&nbsp
+              <a
+                href="https://www.simplyrecipes.com/sally-vargas-5091780"
+                target="_blank"
+                >Sally Vegas</a
+              >
+            </caption>
+          </p>
+          <blockquote class="sidekick">
+            <span class="bold-text" style="color: #40af92">featured in:</span>
+            <p>
+              <a
+                href="https://www.simplyrecipes.com/cranberry-recipes-that-go-beyond-sauce-5206174"
+                target="_blank"
+                >Fresh Cranberry Recipes That Go Beyond Sauce</a
+              >
+            </p>
+          </blockquote>
+        </section>
+        <section class="recipe-body">
+          <div class="section-title">
+            <h3>Ingredients</h3>
+          </div>
+          <div class="section-list">
+            <h4>For the focaccia:</h4>
+            <ul>
+              <li>
+                <span class="bold-text">4</span> cups (500g) all-purpose flour
+              </li>
+              <li>
+                <span class="bold-text">11/2</span> teaspoons instant yeast
+              </li>
+              <li><span class="bold-text">11/2</span> teaspoons salt</li>
+              <li>
+                <span class="bold-text">13/4</span> cups (350g) lukewarm water
+              </li>
+              <li>
+                <span class="bold-text">1/4</span> cup extra virgin olive oil,
+                plus more for the pan
+              </li>
+            </ul>
+          </div>
+          <div class="section-list">
+            <h4>For the toppings:</h4>
+            <ul>
+              <li>
+                <span class="bold-text">3</span> medium yellow onions, thinly
+                sliced
+              </li>
+              <li>
+                <span class="bold-text">1</span> tablespoon balsamic vinegar
+              </li>
+              <li>
+                <span class="bold-text">1-2</span> tablespoons olive oil, for
+                brushing on top
+              </li>
+              <li>
+                <span class="bold-text">10</span> ounces brie, cut into cubes
+                (srape rind off with a paring knife if desired, though it's not
+                necessary)
+              </li>
+              <li>
+                <span class="bold-text">1-1/2</span> cups fresh or frozen
+                cranberries
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="recipe-body">
+          <div class="section-title">
+            <h3>Method</h3>
+          </div>
+          <div class="section-list">
+            <ol>
+              <li>
+                <h4>Make the focaccia dough</h4>
+                <p>
+                  In a medium-sized mixing bowl, or in a stand mixer with a
+                  padddle attachment, mix togheter all the dough ingredients
+                  until the flour is fully absorbed. You don't need to actyally
+                  knead the dough, though I sometimes knead it a few times in
+                  the bowl wheh mixing by hand to incorporate the last of the
+                  flour...
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Read more on
+        <a href="https://www.simplyrecipes.com/" target="_blank"
+          >Simply recipes</a
+        >
+      </p>
+      <div class="top-btn">
+        <a id="arrow-top" href="#"
+          ><span class="material-symbols-rounded">keyboard_arrow_up</span></a
+        >
+        <p>scroll to top</p>
+      </div>
+    </footer>
+  </body>
+</html>

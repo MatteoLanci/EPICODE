@@ -1,0 +1,459 @@
+<!-- Trasforma il mockup allegato in una pagina HTML+CSS.
+Negli allegati troverai anche tutti gli asset necessari.
+
+L’implementazione deve utilizzare flexbox! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- ! ICON FOR FIRST THUMB-HOVER (BELOW) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>DRIBBBLE MOCKOUP | Matteo Lanci</title>
+  </head>
+  <body>
+    <header>
+      <div class="title-section">
+        <h1 class="title">Flex Box</h1>
+        <p class="subtitle">10.000+ amazing flex box designs for inspiration</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="related">
+        <span>Related:</span>
+        <a href="#">package</a>
+        <a href="#">muscle</a>
+        <a href="#">cardboard</a>
+        <a href="#">gift</a>
+        <a href="#">cube</a>
+        <a href="#">boxes</a>
+      </div>
+
+      <section class="main-wrapper">
+        <div class="main-heading">
+          <div class="heading-btn left-btn">
+            <a href="#">
+              <span>Popular</span>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </a>
+            <div class="left-btn-hover">
+              <a href="#" class="active"><p>Popular</p></a>
+              <a href="#"><p>Following</p></a>
+              <a href="#"> <p>New & Noteworthy</p></a>
+              <a href="#"><p>Marketplace</p></a>
+            </div>
+          </div>
+
+          <div class="categories">
+            <a href="#">All</a>
+            <a href="#">Animation</a>
+            <a href="#">Branding</a>
+            <a href="#">Illustration</a>
+            <a href="#">Mobile</a>
+            <a href="#">Print</a>
+            <a href="#">Product Design</a>
+            <a href="#">Typography</a>
+            <a href="#" class="active">Web Design</a>
+          </div>
+
+          <div class="heading-btn">
+            <a href="#">Filters</a>
+          </div>
+        </div>
+
+        <div class="thumbs-wrapper">
+          <!-- THUMB 1 -->
+          <div class="thumb">
+            <figure class="shot-image">
+              <img src="./assets/caglar.jpeg" alt="caglar cebeci" />
+              <span class="material-symbols-outlined thumb-icon">
+                filter_none
+              </span>
+              <div class="img-info-hover">
+                <span class="text-hover-shot">Caglar Cebeci Project</span>
+                <div class="icon-hover-shot">
+                  <span class="material-symbols-outlined save-icon">
+                    bookmark_add
+                  </span>
+                  <span class="material-symbols-rounded like-icon">
+                    favorite
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <div class="thumb-detail-wrapper">
+              <div class="user-info">
+                <a href="#">
+                  <img
+                    class="propic"
+                    src="./assets/propic/caglar-cebeci.webp"
+                    alt="caglar cebeci"
+                  />
+                  <span class="userId">Caglar Cebeci</span>
+                </a>
+                <a href="#">
+                  <span class="badge">PRO</span>
+                </a>
+              </div>
+              <div class="shot-stats">
+                <div class="like-stats">
+                  <a href="#"
+                    ><span class="material-symbols-rounded like-icon">
+                      favorite
+                    </span>
+                    <span class="like-counter">648</span></a
+                  >
+                </div>
+                <div class="views-stats">
+                  <span class="material-symbols-rounded"> visibility </span>
+                  <span class="views-counter">125k</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMB 2 -->
+          <div class="thumb">
+            <figure class="shot-image">
+              <img src="./assets/ramotion.jpeg" alt="Ramotion" />
+              <div class="img-info-hover">
+                <span class="text-hover-shot">Ramotion Project</span>
+                <div class="icon-hover-shot">
+                  <span class="material-symbols-outlined save-icon">
+                    bookmark_add
+                  </span>
+                  <span class="material-symbols-rounded like-icon">
+                    favorite
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <div class="thumb-detail-wrapper">
+              <div class="user-info">
+                <a href="#">
+                  <img
+                    class="propic"
+                    src="./assets/propic/ramotion.png"
+                    alt="caglar cebeci"
+                  />
+                  <span class="userId">Ramotion</span>
+                </a>
+                <a href="#">
+                  <span class="badge">TEAM</span>
+                </a>
+              </div>
+              <div class="shot-stats">
+                <div class="like-stats">
+                  <a href="#"
+                    ><span class="material-symbols-rounded like-icon">
+                      favorite
+                    </span>
+                    <span class="like-counter">402</span></a
+                  >
+                </div>
+                <div class="views-stats">
+                  <span class="material-symbols-rounded"> visibility </span>
+                  <span class="views-counter">72.2k</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMB 3 -->
+          <div class="thumb">
+            <figure class="shot-image">
+              <img src="./assets/zajno.jpeg" alt="zajno crew" />
+              <span class="material-symbols-outlined thumb-icon">
+                videocam
+              </span>
+              <div class="img-info-hover">
+                <span class="text-hover-shot">Zajno Crew Project</span>
+                <div class="icon-hover-shot">
+                  <span class="material-symbols-outlined save-icon">
+                    bookmark_add
+                  </span>
+                  <span class="material-symbols-rounded like-icon">
+                    favorite
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <div class="thumb-detail-wrapper">
+              <div class="user-info">
+                <a href="#">
+                  <img
+                    class="propic"
+                    src="./assets/propic/zajno.webp"
+                    alt="caglar cebeci"
+                  />
+                  <span class="userId">Zajno Crew</span>
+                </a>
+                <a href="#">
+                  <span class="badge">TEAM</span>
+                </a>
+              </div>
+              <div class="shot-stats">
+                <div class="like-stats">
+                  <a href="#"
+                    ><span class="material-symbols-rounded like-icon">
+                      favorite
+                    </span>
+                    <span class="like-counter">178</span></a
+                  >
+                </div>
+                <div class="views-stats">
+                  <span class="material-symbols-rounded"> visibility </span>
+                  <span class="views-counter">25.8K</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMB 4 -->
+          <div class="thumb">
+            <figure class="shot-image">
+              <img src="./assets/afterglow.jpeg" alt="Afterglow" />
+              <div class="img-info-hover">
+                <span class="text-hover-shot">Afterglow Project</span>
+                <div class="icon-hover-shot">
+                  <span class="material-symbols-outlined save-icon">
+                    bookmark_add
+                  </span>
+                  <span class="material-symbols-rounded like-icon">
+                    favorite
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <div class="thumb-detail-wrapper">
+              <div class="user-info">
+                <a href="#">
+                  <img
+                    class="propic"
+                    src="./assets/propic/afterglow.webp"
+                    alt="caglar cebeci"
+                  />
+                  <span class="userId">Afterglow</span>
+                </a>
+                <a href="#">
+                  <span class="badge">TEAM</span>
+                </a>
+              </div>
+              <div class="shot-stats">
+                <div class="like-stats">
+                  <a href="#"
+                    ><span class="material-symbols-rounded like-icon">
+                      favorite
+                    </span>
+                    <span class="like-counter">233</span></a
+                  >
+                </div>
+                <div class="views-stats">
+                  <span class="material-symbols-rounded"> visibility </span>
+                  <span class="views-counter">25.6K</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMB 5 -->
+          <div class="thumb">
+            <figure class="shot-image">
+              <img src="./assets/kobbieDa.jpeg" alt="Kobbie Da" />
+              <div class="img-info-hover">
+                <span class="text-hover-shot">Kobbie Da Project</span>
+                <div class="icon-hover-shot">
+                  <span class="material-symbols-outlined save-icon">
+                    bookmark_add
+                  </span>
+                  <span class="material-symbols-rounded like-icon">
+                    favorite
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <div class="thumb-detail-wrapper">
+              <div class="user-info">
+                <a href="#">
+                  <img
+                    class="propic"
+                    src="./assets/propic/kobbie_da.webp"
+                    alt="caglar cebeci"
+                  />
+                  <span class="userId">Kobbie Da</span>
+                </a>
+                <a href="#">
+                  <span class="badge">PRO</span>
+                </a>
+              </div>
+              <div class="shot-stats">
+                <div class="like-stats">
+                  <a href="#"
+                    ><span class="material-symbols-rounded like-icon">
+                      favorite
+                    </span>
+                    <span class="like-counter">50</span></a
+                  >
+                </div>
+                <div class="views-stats">
+                  <span class="material-symbols-rounded"> visibility </span>
+                  <span class="views-counter">4.3k</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMB 6 -->
+          <div class="thumb">
+            <figure class="shot-image">
+              <img src="./assets/icon8.jpeg" alt="Icons8" />
+              <div class="img-info-hover">
+                <span class="text-hover-shot">Icons8 Project</span>
+                <div class="icon-hover-shot">
+                  <span class="material-symbols-outlined save-icon">
+                    bookmark_add
+                  </span>
+                  <span class="material-symbols-rounded like-icon">
+                    favorite
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <div class="thumb-detail-wrapper">
+              <div class="user-info">
+                <a href="#">
+                  <img
+                    class="propic"
+                    src="./assets/propic/icons8.webp"
+                    alt="caglar cebeci"
+                  />
+                  <span class="userId">Icons8</span>
+                </a>
+                <a href="#">
+                  <span class="badge">TEAM</span>
+                </a>
+              </div>
+              <div class="shot-stats">
+                <div class="like-stats">
+                  <a href="#"
+                    ><span class="material-symbols-rounded like-icon">
+                      favorite
+                    </span>
+                    <span class="like-counter">57</span></a
+                  >
+                </div>
+                <div class="views-stats">
+                  <span class="material-symbols-rounded"> visibility </span>
+                  <span class="views-counter">9.2k</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMB 7 -->
+          <div class="thumb">
+            <figure class="shot-image">
+              <img src="./assets/pitch.jpeg" alt="Pitch" />
+              <span class="material-symbols-outlined thumb-icon">
+                open_in_new
+              </span>
+              <div class="img-info-hover">
+                <span class="text-hover-shot">Pitch Project</span>
+                <div class="icon-hover-shot">
+                  <span class="material-symbols-outlined save-icon">
+                    bookmark_add
+                  </span>
+                  <span class="material-symbols-rounded like-icon">
+                    favorite
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <div class="thumb-detail-wrapper">
+              <div class="user-info">
+                <a href="#">
+                  <img
+                    class="propic"
+                    src="./assets/propic/pitch.webp"
+                    alt="caglar cebeci"
+                  />
+                  <span class="userId">Pitch</span>
+                </a>
+                <a href="#">
+                  <span class="badge">TEAM</span>
+                </a>
+              </div>
+              <div class="shot-stats">
+                <div class="boosted">
+                  <a href="#"><span class="boosted">BOOSTED</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMB 8 -->
+          <div class="thumb">
+            <figure class="shot-image">
+              <img src="./assets/nicolas.jpeg" alt="Nicolas Solerieu" />
+              <div class="img-info-hover">
+                <span class="text-hover-shot">Nicolas Solerieu Project</span>
+                <div class="icon-hover-shot">
+                  <span class="material-symbols-outlined save-icon">
+                    bookmark_add
+                  </span>
+                  <span class="material-symbols-rounded like-icon">
+                    favorite
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <div class="thumb-detail-wrapper">
+              <div class="user-info">
+                <a href="#">
+                  <img
+                    class="propic"
+                    src="./assets/propic/nicolas_solerieu.webp"
+                    alt="caglar cebeci"
+                  />
+                  <span class="userId">Nicolas Solerieu</span>
+                </a>
+                <a href="#">
+                  <span class="badge">PRO</span>
+                </a>
+              </div>
+              <div class="shot-stats">
+                <div class="like-stats">
+                  <a href="#"
+                    ><span class="material-symbols-rounded like-icon">
+                      favorite
+                    </span>
+                    <span class="like-counter">79</span></a
+                  >
+                </div>
+                <div class="views-stats">
+                  <span class="material-symbols-rounded"> visibility </span>
+                  <span class="views-counter">22.7k</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

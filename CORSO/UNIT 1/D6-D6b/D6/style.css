@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bgColor: #282a3a;
+}
+
+body {
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-container {
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 8px -1px #c69749;
+}
+.card-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.card-container:hover:after {
+  opacity: 1;
+}
+
+.card-container img {
+  max-width: 400px;
+  transition: 0.8s;
+}
+
+.redBtn {
+  position: absolute;
+  top: -5rem;
+  right: 1rem;
+  background: #e11818;
+  padding: 0.8rem 1rem;
+  z-index: 1;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+.redBtn:hover {
+  background: #7e0e0e;
+  border: 2px solid #bb1515;
+}
+.redBtn:active {
+  background-color: #bb1515;
+  color: #282a3a;
+  transition: 0.1s;
+}
+
+.saveHover {
+  position: absolute;
+  top: 10px;
+  left: -250px;
+  font-size: 0.7rem;
+  display: none;
+}
+
+.redBtn:hover .saveHover {
+  display: block;
+  transition: 0.5s;
+}
+
+.card-container:hover .redBtn {
+  position: absolute;
+  top: 1rem;
+}
+
+.wrapper-white {
+  position: absolute;
+  bottom: -5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  gap: 1rem;
+  transition: all 0.4s;
+}
+
+.info-hover {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+#view-more {
+  position: absolute;
+  bottom: 60px;
+  left: 22px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#goToPage:hover #view-more {
+  opacity: 1;
+}
+
+#share-hover {
+  position: absolute;
+  bottom: 60px;
+  left: 240px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#share:hover #share-hover {
+  opacity: 1;
+}
+
+#other-hover {
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#other:hover #other-hover {
+  opacity: 1;
+}
+
+.wrapper-white a {
+  color: #282a3a;
+}
+
+.whiteBtn {
+  background: #f1f1f199;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.whiteBtn:hover {
+  background: #f1f1f1;
+}
+
+.whiteBtn i {
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+.whiteBtn i:active {
+  background-color: #4d4a4a;
+  color: #ffffff;
+  transition: 0.1s;
+}
+
+.whiteBtnText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  z-index: 1;
+  background: #f1f1f199;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.7rem;
+}
+.whiteBtnText:hover {
+  background: #f1f1f1;
+}
+.whiteBtnText:active {
+  background-color: #4d4a4a;
+  color: #ffffff;
+  transition: 0.1s;
+}
+
+.card-container:hover .wrapper-white {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-right: 2rem;
+  position: absolute;
+  bottom: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+footer span {
+  user-select: none;
+}
+
+footer p,
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: currentColor;
+  color: #282a3a;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #ca2376;
+}
+
+#contact:hover {
+  color: rgb(223, 171, 0);
+}
+
+#epicode-logo {
+  width: 15px;
+  margin: 5px;
+}
+
+.checkMe {
+  position: absolute;
+  bottom: 1.5px;
+  left: -100%;
+  z-index: 1;
+  color: #f1f1f1;
+  background: #00000080;
+  padding: 1px 30px;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.footer:hover .checkMe {
+  opacity: 1;
+  left: 3px;
+}
+
+#link-hover {
+  color: #282a3a;
+  font-weight: 600;
+}
+#link-hover:hover {
+  text-decoration: none;
+  color: #b6b4b4;
+}
+
+@media only screen and (max-height: 800px) {
+  .card-container {
+    margin-top: -50px;
+  }
+
+  .card-container img {
+    max-width: 300px;
+    transition: 0.8s;
+  }
+
+  .redBtn {
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .saveHover {
+    left: -205px;
+    font-size: 0.6rem;
+  }
+
+  .whiteBtnText {
+    max-width: 150px;
+  }
+
+  #view-more {
+    left: -8px;
+  }
+
+  #share-hover {
+    left: 148px;
+  }
+
+  #other-hover {
+    right: 9px;
+  }
+
+  .info-hover {
+    font-size: 0.6rem;
+  }
+
+  footer {
+    width: 90%;
+  }
+}

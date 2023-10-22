@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Epicode (Advanced CSS)</title>
+</head>
+<body>
+    <h2 class="lc-title">Epicode [ M3.D1 - Advanced CSS ]</h2>
+    <hr>
+    <!-- 1. Content Box & Border Box -->
+    <!-- <style>
+        * {
+            box-sizing: border-box;
+        }
+        .my-paragraph {
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+    <div class="my-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita possimus quos nemo tempora harum, vitae placeat perferendis cumque molestiae earum dicta aspernatur nam iure sunt deleniti ut. Fuga, id amet?
+    </div> -->
+
+    <!-- 2. User Agent Stylesheet -->
+    <!-- <button>Click me!</button> -->
+
+    <!-- 3. Selettori avanzati -->
+    <!-- <style>
+        #my-container .sub-container .my-paragraph span.text-box {
+            color: brown;
+            font-weight: bold;
+            font-size: 32px;
+        }
+    </style>
+    <div id="my-container">
+        <div class="sub-container">
+            <p class="my-paragraph">
+                <span class="text-box">My Text!</span>
+            </p>
+        </div>
+    </div> -->
+
+    <!-- 4. Specificity Rule -->
+    <!-- <style>
+        h2 {
+            color: green;
+        }
+
+        h2.my-title {
+            color: pink !important;
+            background-color: yellow;
+        }
+
+        h2.my-title {
+            color: purple;
+        }
+
+        #unique-title {
+            color: orange;
+        }
+    </style>
+    <h2 class="my-title" id="unique-title" style="color: black !important;">
+        IL MIO TITOLO!
+    </h2> -->
+    <!-- BREAK! -->
+
+    <!-- 5. Inline, Block, Inline-block -->
+    <!-- <style>
+        span.inline {
+            width: 200px;
+            height: 200px;
+        }
+        span.inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <span class="inline">Sono un elemento inline!</span>
+    <div>Sono un elemento block!</div>
+    <span class="inline-block">Sono un elemento inline block e posso assumere dimensioni custom!</span>
+    <span class="inline-block">Sono un elemento inline block e posso assumere dimensioni custom!</span> -->
+    
+    <!-- 6. CSS Selectors & Combinators -->
+    <!-- Sviluppati perfettamente sulle slides "CSS Recap". -->
+    <!-- Attribute selectors: https://www.w3schools.com/css/css_attribute_selectors.asp -->
+
+    <!-- 7. Pseudo classes -->
+    <!-- <style>
+        button#my-btn:active {
+            border: solid 2px red;
+        }
+        button#another-btn:hover {
+            background-color: greenyellow;
+        }
+        button#again-btn:focus {
+            background-color: orange;
+        }
+        a#my-link:visited {
+            color: brown;
+        }
+        button#testing:visited {
+            background-color: coral;
+        }
+    </style>
+
+    <button id="testing">Visited!</button>
+    <button id="my-btn">Invia Modulo</button><br><br>
+    <button id="another-btn">Change my bg!</button><br><br>
+    <button id="again-btn">Focus me!</button><br><br>
+    <a href="#" id="my-link">A simple link!</a> -->
+
+    <!-- 8. Before, After, first-line, first-letter -->
+    <!-- <style>
+        div.my-div:hover {
+            color: purple;
+        }
+        div.my-div::before {
+            content: "before2x";
+        }
+        div.my-div::after {
+            content: "after2x";
+        }
+        div.another-div::first-line {
+            color: red;
+        }
+        div.another-div::first-line {
+            color: blue;
+        }
+    </style>
+    <div class="my-div">
+        My main text!
+    </div><br><br>
+    <div class="another-div">
+        Hey there,<br>
+        I'm on a new line!
+    </div> -->
+</body>
+</html>

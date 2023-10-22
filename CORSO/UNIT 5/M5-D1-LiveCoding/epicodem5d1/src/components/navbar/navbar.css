@@ -1,0 +1,6 @@
+nav {
+    display: flex;
+    padding: 1rem;
+    background-color: aqua;
+    color: black;
+}

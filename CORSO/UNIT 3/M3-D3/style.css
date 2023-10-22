@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-primary: #1c3144;
+  --bg-secondary: #014664;
+  --text-primary: #06a77d;
+  --text-secondary: #d5c67a;
+  --text-tertiary: #e1f4cb;
+  --white: #fffff9;
+  --dark: #0d1f22;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none !important;
+  /* border: 1px solid; */
+}
+
+body,
+html {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*!------------------------------------------------------------------------ NAVBAR STYLE SECTION */
+header {
+  margin-bottom: 7rem !important;
+}
+.navbar {
+  background: linear-gradient(
+    to bottom,
+    var(--bg-primary),
+    var(--bg-secondary)
+  );
+  box-shadow: 0px 0px 10px var(--text-tertiary);
+}
+.navbar a {
+  color: var(--text-tertiary);
+}
+.navbar-toggler {
+  border-color: var(--text-secondary) !important;
+  color: var(--text-secondary) !important;
+}
+.bx.bxl-deezer {
+  font-size: 3rem;
+  transition: 0.3s;
+}
+.bx.bxl-deezer:hover {
+  background: linear-gradient(var(--text-tertiary), var(--text-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar-nav a:hover {
+  color: var(--text-secondary);
+}
+/*!------------------------------------------------------------------------ END NAVBAR STYLE SECTION */
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background: linear-gradient(160deg, var(--bg-primary), var(--bg-secondary));
+  /* border: 2px solid red; */
+}
+/*?------------------------------------------- CARDS-WRAPPER STYLE */
+.toplist-wrapper {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+/*?------------------------------------------- CARD STYLE */
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 10px !important;
+  border: none !important;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px var(--white);
+}
+
+.card-img {
+  border-radius: 0px !important;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  color: var(--text-tertiary);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: linear-gradient(to top, #000000, #00000005);
+  transition: 0.3s;
+}
+.card-img-overlay h5 {
+  /* border: 1px solid green; */
+  margin: 0px;
+}
+.card-img-overlay p {
+  /* border: 1px solid greenyellow; */
+  margin: 0px;
+}
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.card-info {
+  width: 95%;
+  max-width: 300px;
+}
+.card-info h5 {
+  padding-inline: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1rem;
+  padding-top: 0.5rem;
+  color: var(--text-secondary);
+  transition: 0.2s;
+}
+.card-info h5:hover {
+  opacity: 80%;
+}
+.album-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-inline: 0.5rem;
+}
+.artist {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  transition: 0.2s;
+}
+.artist:hover {
+  opacity: 80%;
+}
+.genre {
+  font-size: 0.6rem;
+  color: var(--text-tertiary);
+  transition: 0.2s;
+}
+.genre:hover {
+  opacity: 90%;
+}
+
+/*?-------------------------------------------- SECTION BEST ALBUM */
+.fav-album h2,
+.carousel h2 {
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+.fav-album-img-wrapper {
+  max-width: 1000px !important;
+  cursor: pointer;
+}
+.row.g-0 {
+  background: linear-gradient(
+    to bottom,
+    var(--bg-secondary),
+    var(--bg-primary)
+  );
+  color: var(--text-tertiary);
+}
+.bestAlbum-title {
+  color: var(--text-secondary) !important;
+}
+.table {
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: var(--text-tertiary) !important;
+}
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+  color: var(--text-secondary);
+}
+
+.table tbody tr td:first-of-type {
+  font-size: 1rem !important;
+}
+.table tbody tr td:last-of-type,
+.table thead tr th:last-of-type {
+  text-align: end !important;
+}
+
+.table thead th {
+  color: var(--text-secondary);
+}
+
+/*?-------------------------------------------- SECTION CAROUSEL */
+.container.carousel {
+  margin-top: 10rem;
+}
+.carousel h4 {
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}

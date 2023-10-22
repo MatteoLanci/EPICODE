@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>[JS] DOM</title>
+</head>
+<body>
+    <h1>Esercitazione sul DOM!</h1>
+    <div id="main-content">
+        <div id="list-title">
+            <span>Le specialità </span>
+            <span>della casa:</span>
+        </div>
+        <!-- Adesso vorrei inserire l'elemento qui! -->
+        <ul id="features" class="my-list complete">
+            <li class="item">Conferisce un'impostazione strutturale e gerarchica agli elementi in pagina;</li>
+            <li class="item">Consente un facile accesso agli elementi da parte di JavaScript;</li>
+            <li class="item">Consente di aggiungere/rimuovere elementi/nodi;</li>
+            <li class="item">Consente di alterare le caratteristiche/attributi di un elemento/nodo;</li>
+            <li class="fake-item">Cos'altro...?</li>
+            <li class="fake-item">Chi più ne ha, più ne metta!</li>
+        </ul>
+        <div id="make-me-red">
+            Questo div vuole cambiare colore...
+        </div>
+        <div class="bottom-div">
+            Questo vuole sparire.
+        </div>
+        <div class="bottom-div">
+            Questo vuole restare!
+        </div>
+        <div class="bottom-div">
+            Questo è indeciso...
+        </div>
+        <hr>
+        <button type="button" id="my-button" onclick="alertMe()">Click me!</button>
+        <!-- Qui dovrebbe andare a finire il nuovo div! -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

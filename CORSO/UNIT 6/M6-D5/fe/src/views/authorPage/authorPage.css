@@ -1,0 +1,8 @@
+.linkToBlogPost {
+  color: currentColor !important;
+  text-decoration: none !important;
+  transition: 0.5s;
+}
+.linkToBlogPost:hover {
+  text-decoration: underline !important;
+}

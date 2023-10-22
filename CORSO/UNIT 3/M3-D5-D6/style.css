@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+/*!------------------- NAVBAR STYLE SECTION */
+.bi-chevron-down {
+  font-size: 0.7rem;
+}
+
+.nav-user-wrapper {
+  position: fixed;
+  right: 1rem;
+  top: 0.6rem;
+}
+
+.nav-user-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.nav-user-icon-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.navbar-user-section ul:last-of-type .bi {
+  font-size: 1.1rem;
+  color: #7a758f;
+}
+.bi-power {
+  color: #c20202 !important;
+  font-size: 1.5rem !important;
+}
+
+.navbar-user-section ul:last-of-type .dropdown-item span:last-of-type {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #7a758f;
+}
+
+.bx-bell {
+  color: #9b9b9b;
+  font-size: 1.3rem;
+}
+
+.dropdown a {
+  text-decoration: none;
+}
+
+.nav-notification-badge {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  border-radius: 50%;
+  background: #754ffe;
+  outline: 2px solid #ffffff;
+}
+
+.nav-user-badge {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 4px;
+  right: 5px;
+  border-radius: 50%;
+  background: #7bc799;
+  outline: 2px solid #ffffff;
+}
+
+.user-menu-info P:first-of-type {
+  font-weight: 500;
+  padding-right: 2rem;
+}
+.user-menu-info P:last-of-type {
+  font-weight: 500;
+  color: #7a758f;
+  font-size: 0.9rem;
+  padding-right: 2rem;
+}
+
+.user-menu-info .dropdown-menu span:last-of-type {
+  font-weight: 500;
+}
+
+/*!------------------- JUMBOTRONE STYLE SECTION */
+.jumbotrone {
+  background: #754ffe;
+  margin-top: 3.7rem;
+}
+
+.jumbotrone .row {
+  max-width: 1100px;
+}
+
+.jumbotrone .card {
+  background: transparent;
+  max-width: 600px;
+}
+
+.jumbotrone .card-title {
+  font-size: 2.7rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.jumbotrone .card-text {
+  font-size: 1.5rem;
+  color: #ffffff80;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 1030px) {
+  .jumbotrone .card-title {
+    font-size: 1.8rem;
+  }
+
+  .jumbotrone .card-text {
+    font-size: 1.2rem;
+  }
+}
+
+.jumbotrone .card a:first-of-type {
+  background: #1acb98;
+  transition: 0.2s;
+}
+
+.jumbotrone .card a:first-of-type:hover {
+  background: #0e6950;
+}
+
+.jumbotrone-img-wrapper img {
+  width: 100%;
+}
+
+.jumbotrone .card {
+  text-align: start;
+}
+
+/*!-------------------  SUB-JUMBOTRONE STYLE SECTION */
+.sub-jumbotrone .bx {
+  background: #ffeeda;
+  color: #c28135;
+  font-size: 1.2rem;
+}
+
+.sub-jumbotrone .card-title {
+  font-weight: 600;
+}
+
+.sub-jumbotrone .card-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #00000090;
+}
+
+/*!------------------- CARD STYLE SECTION */
+
+.bi-bar-chart-fill {
+  color: #754ffe;
+}
+
+.card .bi-star,
+.card .bi-star-half,
+.card .bi-star-fill {
+  font-size: 0.6rem;
+}
+
+.cards-wrapper .card {
+  transition: all 0.5s;
+}
+.cards-wrapper .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #c28135 !important;
+}
+
+.bi-bookmark {
+  color: #7a758f;
+  font-size: 1rem !important;
+  cursor: pointer;
+}
+.bi-bookmark:hover::before {
+  content: attr(data-fill);
+  color: #fcd916;
+}
+
+/*!------------------- FOOTER STYLE SECTION */
+.footer-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.footer-section-two a:hover {
+  transition: all 0.3s;
+  text-decoration: underline !important;
+  color: #000000 !important;
+}
+
+/*?------------------- BOOTSTRAP EDITS */
+.nav-link {
+  color: #7a758f !important;
+}
+.cards-wrapper {
+  position: relative;
+}
+.carousel-control-prev {
+  width: auto !important;
+  height: fit-content !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  padding: 0.5rem;
+  opacity: 1;
+}
+.carousel-control-next {
+  width: auto !important;
+  height: fit-content !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  padding: 0.5rem;
+  opacity: 1;
+}

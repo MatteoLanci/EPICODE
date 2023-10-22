@@ -1,0 +1,12 @@
+----> INDEX.HTML <----
+
+✔ aggiungere tasto alla card che reindirizza a 'product.html' attraverso l'id del prodotto; @done (6/8/2023, 10:43:46 PM)
+
+✔ aggiungere alla card un div, alla fine della card, inserire il bottone di ADD TO CART e quello creato per reindirizzare alla detailed page in questo div dando le giuste spaziature; @done (6/8/2023, 10:43:50 PM)
+
+✔ implementare un footer contente i Contatti e reindirizzare il link nella navbar; @done (6/9/2023, 11:25:57 PM)
+
+----> MANAGE.HTML <----
+
+✔ aggiungere modale di BS al click del tasto EDIT di ogni riga del 'DB' in modo da mostare il form di EDIT per poi assegnare una fetch di modifica del prodotto; @done (6/8/2023, 10:44:14 PM)
+
